@@ -1,0 +1,6 @@
+{
+  "name": "Prisma",
+  "description": "A dark, moody, and cinematic landing page for Prisma, a creative studio for visionary creators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
