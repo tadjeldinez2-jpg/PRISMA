@@ -20,9 +20,9 @@ export default function AboutSection() {
 
   // Segment inputs for the MultiStyle heading
   const headingSegments = [
-    { text: "I am Marcus Chen, ", className: "font-normal" },
+    { text: "I am Marcus Chen, ", className: "font-normal font-almarai" },
     { text: "a self-taught director. ", className: "italic font-serif text-[#DEDBC8]" },
-    { text: "I have skills in color grading, visual effects, and narrative design.", className: "font-normal" },
+    { text: "I have skills in color grading, visual effects, and narrative design.", className: "font-normal font-almarai" },
   ];
 
   return (

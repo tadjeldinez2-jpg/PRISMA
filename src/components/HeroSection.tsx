@@ -56,7 +56,7 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
               { label: "Collective", target: "features" },
               { label: "Workshops", target: "hero" },
               { label: "Programs", target: "features" },
-              { label: "Inquiries", target: "features" },
+              { label: "Inquiries", target: "contact" },
             ].map((item, index) => (
               <button
                 key={index}
