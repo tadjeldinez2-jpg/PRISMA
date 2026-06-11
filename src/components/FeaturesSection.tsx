@@ -162,8 +162,7 @@ export default function FeaturesSection() {
   const [visibleCount, setVisibleCount] = useState<number>(6);
 
   const headerSegments = [
-    { text: "Studio-grade workflows for visionary creators. ", className: "text-[#E1E0CC] font-normal block md:inline" },
-    { text: "Built for pure vision. Powered by art.", className: "text-gray-500 font-normal block md:inline" },
+    { text: "WHAT I CAN DO", className: "text-[#E1E0CC] font-normal tracking-wide block md:inline" },
   ];
 
   // Filter projects dynamically

@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from "react";
-import { Twitter, Circle, Instagram, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import FeaturesSection from "./components/FeaturesSection";
@@ -156,10 +156,7 @@ function LetsTalkSection() {
                   </div>
 
                   <div className="flex items-center gap-1.5 shrink-0">
-                    <SocialBtn icon={Twitter} className="bg-gray-100 text-gray-800" />
-                    <SocialBtn icon={Circle} className="bg-pink-100 text-pink-500" />
                     <SocialBtn icon={Instagram} href="https://www.instagram.com/nagazaki.1/" className="bg-orange-100 text-orange-400" />
-                    <SocialBtn icon={Linkedin} className="bg-blue-100 text-blue-600" />
                   </div>
                 </div>
 

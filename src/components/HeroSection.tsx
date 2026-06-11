@@ -52,22 +52,34 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
             className="bg-black rounded-b-2xl md:rounded-b-3xl px-4 py-3 md:px-10 md:py-4 flex items-center gap-3 sm:gap-6 md:gap-12 lg:gap-14 border-x border-b border-white/5 shadow-2xl"
           >
             {[
-              { label: "Our story", target: "about" },
-              { label: "Collective", target: "features" },
-              { label: "Workshops", target: "hero" },
-              { label: "Programs", target: "features" },
-              { label: "Inquiries", target: "contact" },
-            ].map((item, index) => (
-              <button
-                key={index}
-                id={`navbar-item-${index}`}
-                onClick={() => onNavClick(item.target)}
-                style={{ color: "rgba(225, 224, 204, 0.8)" }}
-                className="text-[10px] sm:text-xs md:text-sm font-medium tracking-wide uppercase transition-colors duration-300 hover:text-[#E1E0CC] whitespace-nowrap cursor-pointer"
-              >
-                {item.label}
-              </button>
-            ))}
+              { label: "about", target: "about" },
+              { label: "projects", target: "features" },
+              { label: "let's talk", target: "contact" },
+            ].map((item, index) => {
+              const isContact = item.target === "contact";
+              return (
+                <button
+                  key={index}
+                  id={`navbar-item-${index}`}
+                  onClick={() => onNavClick(item.target)}
+                  style={isContact ? undefined : { color: "rgba(225, 224, 204, 0.8)" }}
+                  className={
+                    isContact
+                      ? "bg-white text-black font-sans font-bold tracking-[0.1em] uppercase rounded-full px-4 py-1.5 sm:px-5 sm:py-2 text-[10px] sm:text-xs md:text-sm flex items-center gap-1 sm:gap-1.5 transition-all duration-300 hover:bg-[#E1E0CC]/90 hover:scale-[1.03] whitespace-nowrap cursor-pointer"
+                      : "text-[10px] sm:text-xs md:text-sm font-medium tracking-wide uppercase transition-colors duration-300 hover:text-[#E1E0CC] whitespace-nowrap cursor-pointer"
+                  }
+                >
+                  {isContact ? (
+                    <>
+                      <span>LET'S TALK</span>
+                      <span className="text-xs sm:text-sm md:text-base font-normal tracking-[0]">↗</span>
+                    </>
+                  ) : (
+                    item.label
+                  )}
+                </button>
+              );
+            })}
           </div>
         </nav>
 
@@ -83,10 +95,16 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
             {/* Giant Heading (Full width) */}
             <div
                id="hero-heading-col"
-              className="col-span-12 flex flex-col justify-end overflow-visible"
+              className="col-span-12 flex flex-col justify-end overflow-visible select-none"
             >
               <WordsPullUp
-                text="NAGAZAKI"
+                text="hi, i'm nagazaki and i'm a"
+                className="text-[10px] sm:text-xs md:text-sm font-sans font-bold tracking-[0.25em] text-[#E1E0CC] uppercase mb-4 sm:mb-5 pl-1"
+                showAsterisk={false}
+                delay={0.02}
+              />
+              <WordsPullUp
+                text="DESIGNER"
                 className="text-[13vw] sm:text-[13vw] md:text-[13.5vw] lg:text-[13.5vw] xl:text-[13.5vw] 2xl:text-[13.5vw] font-medium leading-[0.85] tracking-[-0.05em] font-sans text-[#E1E0CC]"
                 showAsterisk={false}
                 delay={0.1}
