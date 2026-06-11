@@ -80,63 +80,17 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
             id="hero-grid"
             className="grid grid-cols-12 gap-6 items-end w-full"
           >
-            {/* Giant Heading (Left 8 cols on desktop) */}
+            {/* Giant Heading (Full width) */}
             <div
-              id="hero-heading-col"
-              className="col-span-12 lg:col-span-8 flex flex-col justify-end"
+               id="hero-heading-col"
+              className="col-span-12 flex flex-col justify-end overflow-visible"
             >
               <WordsPullUp
-                text="Prisma"
-                className="text-[26vw] sm:text-[24vw] md:text-[22vw] lg:text-[20vw] xl:text-[19vw] 2xl:text-[20vw] font-medium leading-[0.85] tracking-[-0.07em] font-sans text-[#E1E0CC]"
-                showAsterisk={true}
+                text="NAGAZAKI"
+                className="text-[13vw] sm:text-[13vw] md:text-[13.5vw] lg:text-[13.5vw] xl:text-[13.5vw] 2xl:text-[13.5vw] font-medium leading-[0.85] tracking-[-0.05em] font-sans text-[#E1E0CC]"
+                showAsterisk={false}
                 delay={0.1}
               />
-            </div>
-
-            {/* Description + CTA (Right 4 cols on desktop) */}
-            <div
-              id="hero-desc-col"
-              className="col-span-12 lg:col-span-4 flex flex-col gap-5 sm:gap-6 items-start lg:pl-4 mb-4"
-            >
-              <motion.p
-                id="hero-description"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.5,
-                  ease: customEase,
-                }}
-                className="text-[#DEDBC8]/70 text-xs sm:text-sm md:text-base leading-[1.2] font-light max-w-md"
-              >
-                Prisma is a worldwide network of visual artists, filmmakers and
-                storytellers bound not by place, status or labels but by passion
-                and hunger to unlock potential through our unique perspectives.
-              </motion.p>
-
-              {/* Pill Button */}
-              <motion.button
-                id="hero-cta-btn"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.7,
-                  ease: customEase,
-                }}
-                onClick={() => onNavClick("features")}
-                className="group flex items-center bg-[#DEDBC8] hover:bg-[#eae7d5] text-black pr-2 pl-5 sm:pl-6 py-1.5 sm:py-2 rounded-full font-medium transition-all duration-300 gap-2 hover:gap-3 cursor-pointer shadow-lg border border-[#DEDBC8]/20"
-              >
-                <span className="text-sm sm:text-base uppercase tracking-wider font-semibold">
-                  Join the lab
-                </span>
-                <div
-                  id="hero-cta-arrow-circle"
-                  className="bg-black rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-                >
-                  <ArrowRight className="text-[#DEDBC8] w-4 h-4 sm:w-5 sm:h-5" />
-                </div>
-              </motion.button>
             </div>
           </div>
         </div>

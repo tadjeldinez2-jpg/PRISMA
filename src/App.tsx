@@ -158,7 +158,7 @@ function LetsTalkSection() {
                   <div className="flex items-center gap-1.5 shrink-0">
                     <SocialBtn icon={Twitter} className="bg-gray-100 text-gray-800" />
                     <SocialBtn icon={Circle} className="bg-pink-100 text-pink-500" />
-                    <SocialBtn icon={Instagram} className="bg-orange-100 text-orange-400" />
+                    <SocialBtn icon={Instagram} href="https://www.instagram.com/nagazaki.1/" className="bg-orange-100 text-orange-400" />
                     <SocialBtn icon={Linkedin} className="bg-blue-100 text-blue-600" />
                   </div>
                 </div>
