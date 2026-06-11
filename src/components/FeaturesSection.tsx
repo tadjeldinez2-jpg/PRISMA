@@ -41,13 +41,6 @@ const ALL_PROJECTS: Project[] = [
     features: ["Contextual video criticism", "Generative layout matrices", "Autonomous model pipelines"]
   },
   {
-    id: "05",
-    name: "ASME Studio",
-    gif: "https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif",
-    category: "Cinematic",
-    features: ["Architectural aspect ratios", "Geometric viewport grids", "Sparsely populated shadows"]
-  },
-  {
     id: "06",
     name: "Transform Data",
     gif: "https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif",
